@@ -5,12 +5,125 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:CollectionViewDemo.Views">
 
-    <StackLayout>
-        <!--  Place new controls here  -->
-        <Label
-            HorizontalOptions="Center"
-            Text="Welcome to Xamarin.Forms!"
-            VerticalOptions="CenterAndExpand" />
-    </StackLayout>
+    <TableView Intent="Menu">
+        <TableRoot>
+            <TableSection Title="Layout">
+                <TextCell
+                    Command="{Binding NavigateCommand}"
+                    Detail="Text"
+                    Text="Vertical list" />
+                <TextCell
+                    Command="{Binding NavigateCommand}"
+                    Detail="Text"
+                    Text="Horizontal list" />
+                <!--<TextCell
+                    Command="{Binding NavigateCommand}"
+                    CommandParameter="{x:Type views:VerticalGridTextPage}"
+                    Detail="Text"
+                    Text="Vertical grid" />
+                <TextCell
+                    Command="{Binding NavigateCommand}"
+                    CommandParameter="{x:Type views:HorizontalGridTextPage}"
+                    Detail="Text"
+                    Text="Horizontal grid" />
+                <TextCell
+                    Command="{Binding NavigateCommand}"
+                    CommandParameter="{x:Type views:VerticalListPage}"
+                    Detail="DataTemplate"
+                    Text="Vertical list" />
+                <TextCell
+                    Command="{Binding NavigateCommand}"
+                    CommandParameter="{x:Type views:HorizontalListPage}"
+                    Detail="DataTemplate"
+                    Text="Horizontal list" />
+                <TextCell
+                    Command="{Binding NavigateCommand}"
+                    CommandParameter="{x:Type views:VerticalGridPage}"
+                    Detail="DataTemplate"
+                    Text="Vertical grid" />
+                <TextCell
+                    Command="{Binding NavigateCommand}"
+                    CommandParameter="{x:Type views:HorizontalGridPage}"
+                    Detail="DataTemplate"
+                    Text="Horizontal grid" />
+                <TextCell
+                    Command="{Binding NavigateCommand}"
+                    CommandParameter="{x:Type views:VerticalListDataTemplateSelectorPage}"
+                    Detail="Data template selector"
+                    Text="Vertical list" />
+                <TextCell
+                    Command="{Binding NavigateCommand}"
+                    CommandParameter="{x:Type views:VerticalListRTLPage}"
+                    Detail="RTL FlowDirection"
+                    Text="Vertical list" />-->
+            </TableSection>
+            <!--<TableSection Title="Spacing">
+                <TextCell
+                    Command="{Binding NavigateCommand}"
+                    CommandParameter="{x:Type views:VerticalListSpacingPage}"
+                    Detail="ItemSpacing"
+                    Text="Vertical list" />
+                <TextCell
+                    Command="{Binding NavigateCommand}"
+                    CommandParameter="{x:Type views:HorizontalListSpacingPage}"
+                    Detail="ItemSpacing"
+                    Text="Horizontal list" />
+                <TextCell
+                    Command="{Binding NavigateCommand}"
+                    CommandParameter="{x:Type views:VerticalGridSpacingPage}"
+                    Detail="HorizontalItemSpacing and VerticalItemSpacing"
+                    Text="Vertical grid" />
+                <TextCell
+                    Command="{Binding NavigateCommand}"
+                    CommandParameter="{x:Type views:HorizontalGridSpacingPage}"
+                    Detail="HorizontalItemSpacing and VerticalItemSpacing"
+                    Text="Horizontal grid" />
+            </TableSection>-->
+            <!--<TableSection Title="Sizing">
+                <TextCell
+                    Command="{Binding NavigateCommand}"
+                    CommandParameter="{x:Type views:VerticalListVariableSizeItemsPage}"
+                    Detail="Vertical list"
+                    Text="Variable size items" />
+                <TextCell
+                    Command="{Binding NavigateCommand}"
+                    CommandParameter="{x:Type views:VerticalListDynamicSizeItemsPage}"
+                    Detail="Vertical list"
+                    Text="Dynamic item sizing" />
+            </TableSection>-->
+
+            <TableSection Title="EmptyView">
+                <TextCell
+                    Command="{Binding NavigateCommand}"
+                    Detail="ItemsSource Null"
+                    Text="EmptyView string" />
+                <TextCell
+                    Command="{Binding NavigateCommand}"
+                    Detail="Load simulation"
+                    Text="EmptyView string" />
+                <TextCell
+                    Command="{Binding NavigateCommand}"
+                    Detail="Filtering"
+                    Text="EmptyView string" />
+                <TextCell
+                    Command="{Binding NavigateCommand}"
+                    Detail="Filtering"
+                    Text="EmptyView with multiple views" />
+                <TextCell
+                    Command="{Binding NavigateCommand}"
+                    Detail="Filtering"
+                    Text="EmptyView with EmptyViewTemplate" />
+                <TextCell
+                    Command="{Binding NavigateCommand}"
+                    Detail="Data template selector"
+                    Text="EmptyView with EmptyViewTemplate" />
+                <TextCell
+                    Command="{Binding NavigateCommand}"
+                    Detail="Filtering"
+                    Text="EmptyView swap" />
+            </TableSection>
+
+        </TableRoot>
+    </TableView>
 
 </ContentPage>
