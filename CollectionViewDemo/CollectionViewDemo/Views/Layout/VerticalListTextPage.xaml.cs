@@ -9,7 +9,7 @@ using Xamarin.Forms.Xaml;
 
 namespace CollectionViewDemo.Views
 {
-	//[XamlCompilation(XamlCompilationOptions.Compile)]
+	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class VerticalListTextPage : ContentPage
 	{
 		public VerticalListTextPage ()

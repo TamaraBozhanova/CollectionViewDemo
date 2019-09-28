@@ -3,7 +3,8 @@
     x:Class="CollectionViewDemo.Views.MainPage"
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:views="clr-namespace:CollectionViewDemo.Views">
+    xmlns:views="clr-namespace:CollectionViewDemo.Views"
+    Title="CollectionView Demo">
 
     <TableView Intent="Menu">
         <TableRoot>
@@ -15,6 +16,7 @@
                     Text="Vertical list" />
                 <TextCell
                     Command="{Binding NavigateCommand}"
+                    CommandParameter="{x:Type views:HorizontalListTextPage}"
                     Detail="Text"
                     Text="Horizontal list" />
                 <!--<TextCell
