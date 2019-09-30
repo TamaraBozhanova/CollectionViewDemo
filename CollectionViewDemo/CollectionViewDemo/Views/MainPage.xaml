@@ -24,12 +24,13 @@
                     Detail="Text"
                     Command="{Binding NavigateCommand}"
                     CommandParameter="{x:Type views:VerticalGridTextPage}" />
-                <!--
                 <TextCell
                     Command="{Binding NavigateCommand}"
                     CommandParameter="{x:Type views:HorizontalGridTextPage}"
                     Detail="Text"
                     Text="Horizontal grid" />
+                <!--
+               
                 <TextCell
                     Command="{Binding NavigateCommand}"
                     CommandParameter="{x:Type views:VerticalListPage}"
