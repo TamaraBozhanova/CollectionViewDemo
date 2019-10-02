@@ -40,6 +40,11 @@
                     CommandParameter="{x:Type layout:VerticalListPage}"
                     Detail="DataTemplate"
                     Text="Vertical list" />
+                <TextCell
+                    Command="{Binding NavigateCommand}"
+                    CommandParameter="{x:Type layout:HorizontalListPage}"
+                    Detail="DataTemplate"
+                    Text="Horizontal list" />
                 <!--
 
                 <TextCell
@@ -47,11 +52,7 @@
                     CommandParameter="{x:Type views:VerticalListPage}"
                     Detail="DataTemplate"
                     Text="Vertical list" />
-                <TextCell
-                    Command="{Binding NavigateCommand}"
-                    CommandParameter="{x:Type views:HorizontalListPage}"
-                    Detail="DataTemplate"
-                    Text="Horizontal list" />
+                
                 <TextCell
                     Command="{Binding NavigateCommand}"
                     CommandParameter="{x:Type views:VerticalGridPage}"
