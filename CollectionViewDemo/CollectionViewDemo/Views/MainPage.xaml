@@ -19,18 +19,23 @@
                     CommandParameter="{x:Type views:HorizontalListTextPage}"
                     Detail="Text"
                     Text="Horizontal list" />
-                <TextCell 
-                    Text="Vertical grid"
-                    Detail="Text"
+                <TextCell
                     Command="{Binding NavigateCommand}"
-                    CommandParameter="{x:Type views:VerticalGridTextPage}" />
+                    CommandParameter="{x:Type views:VerticalGridTextPage}"
+                    Detail="Text"
+                    Text="Vertical grid" />
                 <TextCell
                     Command="{Binding NavigateCommand}"
                     CommandParameter="{x:Type views:HorizontalGridTextPage}"
                     Detail="Text"
                     Text="Horizontal grid" />
+                <TextCell
+                    Command="{Binding NavigateCommand}"
+                    CommandParameter="{x:Type views:VerticalGridPage}"
+                    Detail="DataTemplate"
+                    Text="Vertical grid" />
                 <!--
-               
+
                 <TextCell
                     Command="{Binding NavigateCommand}"
                     CommandParameter="{x:Type views:VerticalListPage}"
