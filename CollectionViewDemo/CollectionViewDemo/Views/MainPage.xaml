@@ -32,11 +32,6 @@
                     Text="Horizontal grid" />
                 <TextCell
                     Command="{Binding NavigateCommand}"
-                    CommandParameter="{x:Type views:VerticalGridPage}"
-                    Detail="DataTemplate"
-                    Text="Vertical grid" />
-                <TextCell
-                    Command="{Binding NavigateCommand}"
                     CommandParameter="{x:Type layout:VerticalListPage}"
                     Detail="DataTemplate"
                     Text="Vertical list" />
@@ -45,19 +40,20 @@
                     CommandParameter="{x:Type layout:HorizontalListPage}"
                     Detail="DataTemplate"
                     Text="Horizontal list" />
-                <!--
-
-                <TextCell
-                    Command="{Binding NavigateCommand}"
-                    CommandParameter="{x:Type views:VerticalListPage}"
-                    Detail="DataTemplate"
-                    Text="Vertical list" />
-                
                 <TextCell
                     Command="{Binding NavigateCommand}"
                     CommandParameter="{x:Type views:VerticalGridPage}"
                     Detail="DataTemplate"
                     Text="Vertical grid" />
+                <TextCell
+                    Command="{Binding NavigateCommand}"
+                    CommandParameter="{x:Type layout:HorizontalGridPage}"
+                    Detail="DataTemplate"
+                    Text="Horizontal grid" />
+                <!--
+
+               
+               
                 <TextCell
                     Command="{Binding NavigateCommand}"
                     CommandParameter="{x:Type views:HorizontalGridPage}"
