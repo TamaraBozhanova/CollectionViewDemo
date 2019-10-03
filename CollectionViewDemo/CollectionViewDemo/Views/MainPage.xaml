@@ -50,25 +50,17 @@
                     CommandParameter="{x:Type layout:HorizontalGridPage}"
                     Detail="DataTemplate"
                     Text="Horizontal grid" />
-                <!--
-
-               
-               
                 <TextCell
                     Command="{Binding NavigateCommand}"
-                    CommandParameter="{x:Type views:HorizontalGridPage}"
-                    Detail="DataTemplate"
-                    Text="Horizontal grid" />
-                <TextCell
-                    Command="{Binding NavigateCommand}"
-                    CommandParameter="{x:Type views:VerticalListDataTemplateSelectorPage}"
+                    CommandParameter="{x:Type layout:VerticalListDataTemplateSelectorPage}"
                     Detail="Data template selector"
                     Text="Vertical list" />
                 <TextCell
                     Command="{Binding NavigateCommand}"
-                    CommandParameter="{x:Type views:VerticalListRTLPage}"
+                    CommandParameter="{x:Type layout:VerticalListRTLPage}"
                     Detail="RTL FlowDirection"
-                    Text="Vertical list" />-->
+                    Text="Vertical list" />
+                
             </TableSection>
             <!--<TableSection Title="Spacing">
                 <TextCell
