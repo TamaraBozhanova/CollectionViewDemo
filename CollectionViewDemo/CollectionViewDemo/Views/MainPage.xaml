@@ -126,7 +126,8 @@
                 <TextCell
                     Command="{Binding NavigateCommand}"
                     Detail="Data template selector"
-                    Text="EmptyView with EmptyViewTemplate" />
+                    Text="EmptyView with EmptyViewTemplate" 
+                     CommandParameter="{x:Type views:EmptyViewDataTemplateSelectorPage}"/>
                 <TextCell
                     Command="{Binding NavigateCommand}"
                     Detail="Filtering"
