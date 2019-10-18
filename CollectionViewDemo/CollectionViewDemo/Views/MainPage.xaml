@@ -101,15 +101,18 @@
                 <TextCell
                     Command="{Binding NavigateCommand}"
                     Detail="ItemsSource Null"
-                    Text="EmptyView string" />
+                    Text="EmptyView string" 
+                    CommandParameter="{x:Type views:EmptyViewNullPage}"/>
                 <TextCell
                     Command="{Binding NavigateCommand}"
                     Detail="Load simulation"
-                    Text="EmptyView string" />
+                    Text="EmptyView string"
+                    CommandParameter="{x:Type views:EmptyViewLoadSimulationPage}"/>
                 <TextCell
                     Command="{Binding NavigateCommand}"
                     Detail="Filtering"
-                    Text="EmptyView string" />
+                    Text="EmptyView string" 
+                    CommandParameter="{x:Type views:EmptyViewFilteredPage}"/>
                 <TextCell
                     Command="{Binding NavigateCommand}"
                     Detail="Filtering"

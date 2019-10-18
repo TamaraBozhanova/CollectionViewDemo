@@ -2,10 +2,13 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
+using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
+using System.Windows.Input;
 using CollectionViewDemo.Annotations;
 using CollectionViewDemo.Models;
+using Xamarin.Forms;
 
 namespace CollectionViewDemo.ViewModels
 {
@@ -13,7 +16,7 @@ namespace CollectionViewDemo.ViewModels
     {
         readonly IList<Monkey> source;
         public ObservableCollection<Monkey> Monkeys { get; private set; }
-
+        public IList<Monkey> EmptyMonkeys { get; private set; }
         public MonkeysViewModel()
         {
             source = new List<Monkey>();
@@ -27,7 +30,7 @@ namespace CollectionViewDemo.ViewModels
             //    Monkeys[1], Monkeys[3], Monkeys[4]
             //};
         }
-
+        public ICommand FilterCommand => new Command<string>(FilterItems);
         void CreateMonkeyCollection()
         {
             source.Add(new Monkey
@@ -167,6 +170,25 @@ namespace CollectionViewDemo.ViewModels
             });
 
             Monkeys = new ObservableCollection<Monkey>(source);
+        }
+
+        void FilterItems(string filter)
+        {
+            var filteredItems = source.Where(monkey => monkey.Name.ToLower().Contains(filter.ToLower())).ToList();
+            foreach (var monkey in source)
+            {
+                if (!filteredItems.Contains(monkey))
+                {
+                    Monkeys.Remove(monkey);
+                }
+                else
+                {
+                    if (!Monkeys.Contains(monkey))
+                    {
+                        Monkeys.Add(monkey);
+                    }
+                }
+            }
         }
 
         #region INotifyPropertyChanged
