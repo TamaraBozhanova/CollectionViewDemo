@@ -116,11 +116,13 @@
                 <TextCell
                     Command="{Binding NavigateCommand}"
                     Detail="Filtering"
-                    Text="EmptyView with multiple views" />
+                    Text="EmptyView with multiple views" 
+                    CommandParameter="{x:Type views:EmptyViewWithViewsFilteredPage}"/>
                 <TextCell
                     Command="{Binding NavigateCommand}"
                     Detail="Filtering"
-                    Text="EmptyView with EmptyViewTemplate" />
+                    Text="EmptyView with EmptyViewTemplate" 
+                    CommandParameter="{x:Type views:EmptyViewTemplatePage}" />
                 <TextCell
                     Command="{Binding NavigateCommand}"
                     Detail="Data template selector"
